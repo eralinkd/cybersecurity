@@ -100,7 +100,7 @@ body{
 	border-radius: 45px;
 }
 .header-text-img{
-	margin-top: 6%;
+	margin-top: 5%;
 	margin-left: 4%;
 	width: 30%;
 	height: 50%;
@@ -110,7 +110,7 @@ body{
 .header-menu .contacts{
 	position: absolute;
 	width: 15%;
-	top: 34%;
+	top: 38%;
 	background: #DB7629;
 	border-radius: 14px;
 	text-align: center;
@@ -118,10 +118,10 @@ body{
 	font-style: normal;
 	font-weight: normal;
 	font-size: 24px;
-	line-height: 20%;
-	padding-bottom: 8px;
-	min-height: 25%;
-	text-align: center;
+	padding: 1% 0;
+	padding-bottom: calc(1% + 8px);
+	display: table-cell;
+	vertical-align: middle;
 	letter-spacing: -0.02em;
 	color: #202033;
 	-webkit-transition: all .5s ease ;
@@ -130,6 +130,7 @@ body{
 	-o-transition: all .5s ease;
 	transition: all .5s ease;
 }
+
 .header-menu .all-about:hover,
 .header-menu .contacts:hover,
 .header-menu .menu:hover{
