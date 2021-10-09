@@ -17,7 +17,7 @@ body{
 	left: 3%;
 	top: 9%;
 	background: url("../img/logo header.svg") no-repeat 50% 50%;
-	background-size: 62%;
+	background-size: 62% 62%;
 	background-color: #DB7629;
 	border-radius: 35px;
 }
@@ -32,13 +32,13 @@ body{
 }
 .header-menu-shade{
 	position: absolute;
-	width: 94%;
+	width: 92%;
 	height: 44%;
 	left: 8%;
 	top: 21%;
 	z-index: -1;
 	background: #191929;
-	border-radius: 39px;
+	border-radius: 39px 0 0 39px;
 }
 
 
@@ -47,13 +47,16 @@ body{
 	.header-logo{
 		height: 8%;
 		top: 2%;
+		border-radius: 15px;
 	}
 	.header-menu{
 		height: 8%;
 		top: 6%;
+		border-radius: 15px;
 	}
 	.header-menu-shade{
 		height: 10%;
 		top: 5%;
+		border-radius: 20px 0 0 20px;
 	}
 }
