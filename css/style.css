@@ -40,3 +40,20 @@ body{
 	background: #191929;
 	border-radius: 39px;
 }
+
+
+
+@media (max-width: 768px) {
+	.header-logo{
+		height: 8%;
+		top: 2%;
+	}
+	.header-menu{
+		height: 8%;
+		top: 6%;
+	}
+	.header-menu-shade{
+		height: 10%;
+		top: 5%;
+	}
+}
