@@ -1,6 +1,41 @@
+@font-face{
+
+font-family: 'Oswald';
+
+src: url('../fonts/Oswald.eot');
+
+src: url('../fonts/Oswald.eot?iefix') format('eot'),
+
+url('../fonts/Oswald.woff') format('woff'),
+
+url('../fonts/Oswald.ttf') format('truetype'),
+
+url('../fonts/Oswald.svg#webfont') format('svg');
+
+font-weight: normal;
+
+font-style: normal;
+
+}
 ::-webkit-scrollbar { /* chrome based */
     width: 0px;  /* ширина scrollbar'a */
     background: transparent;  /* опционально */
+}
+* {
+
+	-webkit-user-select: none;
+
+	-khtml-user-select: none;
+
+	-moz-user-select: none;
+
+	-ms-user-select: none;
+
+	user-select: none;
+
+}
+img{
+	pointer-events: none;
 }
 
 html {
@@ -9,6 +44,40 @@ html {
 }
 body{
 	background: #202033;
+	cursor: pointer;
+}
+.light-theme-button{
+	left: 87%;
+	background: url("../img/sun.svg") no-repeat 50% 50%;
+	border-radius: 14px 0 0 14px;
+}
+.dark-theme-button{
+	position: absolute;
+	left: 92%;
+	background: url("../img/moon.svg") no-repeat 50% 50%;
+	border-radius: 0 14px 14px 0;
+}
+.light-theme-button,
+.dark-theme-button{
+	position: absolute;
+	width: 5%;
+	height: 10%;
+	top: 4%;
+	background-size: 60%;
+	background-color: #DB7629;
+	-webkit-transition: all .5s ease ;
+	-moz-transition: all .5s ease;
+	-ms-transition: all .5s ease;
+	-o-transition: all .5s ease;
+	transition: all .5s ease;
+}
+.light-theme-button:hover,
+.dark-theme-button:hover{
+	background-color: #bf6724;
+}
+.light-theme-button:active,
+.dark-theme-button:active{
+	background-color: #9e541b;
 }
 .header-logo{
 	position: absolute;
@@ -30,6 +99,59 @@ body{
 	background: #5C5C7D;
 	border-radius: 45px;
 }
+.header-text-img{
+	margin-top: 6%;
+	margin-left: 4%;
+	width: 30%;
+	height: 50%;
+}
+.header-menu .menu,
+.header-menu .all-about,
+.header-menu .contacts{
+	position: absolute;
+	width: 15%;
+	top: 34%;
+	background: #DB7629;
+	border-radius: 14px;
+	text-align: center;
+	font-family: Oswald;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 24px;
+	line-height: 20%;
+	padding-bottom: 8px;
+	min-height: 25%;
+	text-align: center;
+	letter-spacing: -0.02em;
+	color: #202033;
+	-webkit-transition: all .5s ease ;
+	-moz-transition: all .5s ease;
+	-ms-transition: all .5s ease;
+	-o-transition: all .5s ease;
+	transition: all .5s ease;
+}
+.header-menu .all-about:hover,
+.header-menu .contacts:hover,
+.header-menu .menu:hover{
+	background: #bf6724;
+}
+.header-menu .all-about:active,
+.header-menu .contacts:active,
+.header-menu .menu:active{
+	background: #9e541b;
+}
+.header-menu .menu{
+	left: 43%;
+}
+.header-menu .all-about{
+	left: 62%;
+}
+.header-menu .contacts{
+	left: 81%;
+}
+.header-menu:hover + .header-menu-shade{
+	background: #141421;
+}
 .header-menu-shade{
 	position: absolute;
 	width: 92%;
@@ -39,6 +161,11 @@ body{
 	z-index: -1;
 	background: #191929;
 	border-radius: 39px 0 0 39px;
+	-webkit-transition: all .5s ease ;
+	-moz-transition: all .5s ease;
+	-ms-transition: all .5s ease;
+	-o-transition: all .5s ease;
+	transition: all .5s ease;
 }
 
 
