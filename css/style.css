@@ -1,50 +1,49 @@
 @font-face{
-
 font-family: 'Oswald';
-
 src: url('../fonts/Oswald.eot');
-
 src: url('../fonts/Oswald.eot?iefix') format('eot'),
-
 url('../fonts/Oswald.woff') format('woff'),
-
 url('../fonts/Oswald.ttf') format('truetype'),
-
 url('../fonts/Oswald.svg#webfont') format('svg');
-
 font-weight: normal;
-
 font-style: normal;
-
+}
+@font-face{
+font-family: 'Roboto Mono';
+src: url('../fonts/Roboto Mono.eot');
+src: url('../fonts/Roboto Mono.eot?iefix') format('eot'),
+url('../fonts/Roboto Mono.woff') format('woff'),
+url('../fonts/Roboto Mono.ttf') format('truetype'),
+url('../fonts/Roboto Mono.svg#webfont') format('svg');
+font-weight: normal;
+font-style: normal;
 }
 ::-webkit-scrollbar { /* chrome based */
     width: 0px;  /* ширина scrollbar'a */
     background: transparent;  /* опционально */
 }
 * {
-
 	-webkit-user-select: none;
-
 	-khtml-user-select: none;
-
 	-moz-user-select: none;
-
 	-ms-user-select: none;
-
 	user-select: none;
-
 }
-img{
-	pointer-events: none;
-}
-
 html {
     -ms-overflow-style: none;  /* IE 10+ */
     scrollbar-width: none; /* Firefox */
 }
 body{
 	background: #202033;
-	cursor: pointer;
+	cursor: standart;
+	height: 4000px;
+}
+.shade{
+	-webkit-transition: all .5s ease;
+	-moz-transition: all .5s ease;
+	-ms-transition: all .5s ease;
+	-o-transition: all .5s ease;
+	transition: all .5s ease;
 }
 .light-theme-button{
 	left: 87%;
@@ -53,7 +52,7 @@ body{
 }
 .dark-theme-button{
 	position: absolute;
-	left: 92%;
+	left: calc(92% + 5px);
 	background: url("../img/moon.svg") no-repeat 50% 50%;
 	border-radius: 0 14px 14px 0;
 }
@@ -65,11 +64,6 @@ body{
 	top: 4%;
 	background-size: 60%;
 	background-color: #DB7629;
-	-webkit-transition: all .5s ease ;
-	-moz-transition: all .5s ease;
-	-ms-transition: all .5s ease;
-	-o-transition: all .5s ease;
-	transition: all .5s ease;
 }
 .light-theme-button:hover,
 .dark-theme-button:hover{
@@ -117,18 +111,13 @@ body{
 	font-family: Oswald;
 	font-style: normal;
 	font-weight: normal;
-	font-size: 24px;
+	font-size: calc(2vw - 4px);
 	padding: 1% 0;
 	padding-bottom: calc(1% + 8px);
 	display: table-cell;
 	vertical-align: middle;
 	letter-spacing: -0.02em;
 	color: #202033;
-	-webkit-transition: all .5s ease ;
-	-moz-transition: all .5s ease;
-	-ms-transition: all .5s ease;
-	-o-transition: all .5s ease;
-	transition: all .5s ease;
 }
 
 .header-menu .all-about:hover,
@@ -150,8 +139,13 @@ body{
 .header-menu .contacts{
 	left: 81%;
 }
-.header-menu:hover + .header-menu-shade{
+.header-menu:hover + .header-menu-shade,
+.first-main-text:hover + .first-main-text-shade,
+.text-img-first:hover + .text-img-first-shade{
 	background: #141421;
+}
+.shade:hover{
+	width: 1px;
 }
 .header-menu-shade{
 	position: absolute;
@@ -162,18 +156,64 @@ body{
 	z-index: -1;
 	background: #191929;
 	border-radius: 39px 0 0 39px;
-	-webkit-transition: all .5s ease ;
-	-moz-transition: all .5s ease;
-	-ms-transition: all .5s ease;
-	-o-transition: all .5s ease;
-	transition: all .5s ease;
 }
 
 
+.first-main-text{
+	position: absolute;
+	width: 67%;
+	left: 3%;
+	top: 76%;
+	padding:  1% 0 1% 0;
+	background: #424668;
+	border-radius: 25px;
+	min-height: 35%;
+}
+.first-main-text-shade{
+	position: absolute;
+	width: 67%;
+	height: 41%;
+	left: 0;
+	top: 73%;
+	z-index: -1;
+	color: #191929;
+	background: #191929;
+	border-radius: 0 25px 25px 0;
+}
+.first-three-p{
+	width: 86%;
+	margin-left: 5%;
+	color: #dedcdc;
+	font-family: 'Roboto Mono', Arial, sans-serif;
+	font-size: calc(2vw - 4px);
+	line-height: 150%;
+	letter-spacing: -0.02em;
+}
+.text-img-first{
+	position: absolute;
+	width: 30%;
+	height: 47%;
+	left: 65%;
+	top: 83%;
+	border-radius: 65px;
+} 
+.text-img-first-shade{
+	position: absolute;
+	width: 32%;
+	height: 47%;
+	left: 59%;
+	top: 79%;
+	background: #191929;
+	border-radius: 62px;
+	z-index: -1;
+}
+.orange{
+	color: #DB7629;
+}
 
-@media (max-width: 768px) {
+@media (max-width: 851px) {
 	.header-logo{
-		height: 8%;
+		height: 7%;
 		top: 2%;
 		border-radius: 15px;
 	}
@@ -187,4 +227,29 @@ body{
 		top: 5%;
 		border-radius: 20px 0 0 20px;
 	}
+	.light-theme-button,
+	.dark-theme-button{
+		top: 1%;
+		height: 3%;
+		border-radius: 5px;
+	}
+	.light-theme-button{
+		border-radius: 6px 0 0 6px;
+		left: calc(87% + 2px);
+	}
+	.dark-theme-button{
+		border-radius: 0 6px 6px 0;
+	}
+	.header-menu .menu,
+	.header-menu .all-about,
+	.header-menu .contacts{
+		top: 38%;
+		height: 9%;
+		font-size: 8px;
+		border-radius: 6px;
+	}
+	.header-text-img{
+		margin-top: 4%;
+	}
+
 }
