@@ -141,7 +141,9 @@ body{
 }
 .header-menu:hover + .header-menu-shade,
 .first-main-text:hover + .first-main-text-shade,
-.text-img-first:hover + .text-img-first-shade{
+.text-img-first:hover + .text-img-first-shade,
+.second-main-text:hover + .second-main-text-shade,
+.text-img-second:hover + .text-img-second-shade{
 	background: #141421;
 }
 .header-menu-shade{
@@ -155,7 +157,9 @@ body{
 	border-radius: 39px 0 0 39px;
 }
 
-
+.orange{
+	color: #DB7629;
+}
 .first-main-text{
 	position: absolute;
 	width: 67%;
@@ -177,7 +181,7 @@ body{
 	background: #191929;
 	border-radius: 0 25px 25px 0;
 }
-.first-three-p{
+.first-four-p{
 	width: 86%;
 	margin-left: 5%;
 	color: #dedcdc;
@@ -204,9 +208,71 @@ body{
 	border-radius: 62px;
 	z-index: -1;
 }
-.orange{
-	color: #DB7629;
+
+
+.second-four-p{
+	width: 85%;
+	margin-left: 12%;
+	color: #dedcdc;
+	font-family: 'Roboto Mono', Arial, sans-serif;
+	font-size: calc(1.5vw - 4px);
+	line-height: 150%;
+	letter-spacing: -0.02em;
 }
+.second-main-text{
+	position: absolute;
+	width: 67%;
+	right: 3%;
+	top: 151%;
+	padding:  1% 0 1% 0%;
+	background: #424668;
+	border-radius: 25px;
+	min-height: 35%;
+}
+.second-main-text-shade{
+	position: absolute;
+	width: 67%;
+	height: 42%;
+	right:  9%;
+	top: 143%;
+	z-index: -1;
+	color: #191929;
+	background: #191929;
+	border-radius: 25px
+}
+.text-img-second{
+	position: absolute;
+	width: 27%;
+	height: 57%;
+	left: 10%;
+	top: 115%;
+	border-radius: 65px;
+} 
+.text-img-second-shade{
+	position: absolute;
+	width: 29%;
+	height: 57%;
+	left: 6%;
+	top: 107%;
+	background: #191929;
+	border-radius: 62px;
+	z-index: -1;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 @media (max-width: 851px) {
 	.header-logo{
