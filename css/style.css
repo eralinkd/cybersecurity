@@ -144,9 +144,6 @@ body{
 .text-img-first:hover + .text-img-first-shade{
 	background: #141421;
 }
-.shade:hover{
-	width: 1px;
-}
 .header-menu-shade{
 	position: absolute;
 	width: 92%;
