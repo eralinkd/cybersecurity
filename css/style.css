@@ -36,7 +36,7 @@ html {
 body{
 	background: #202033;
 	cursor: standart;
-	height: 8000px;
+	height: 20000px;
 }
 .shade{
 	-webkit-transition: all .5s ease;
@@ -150,7 +150,13 @@ body{
 .text-img-fifth:hover + .text-img-fifth-shade,
 .fourth-main-text:hover + .fourth-main-text-shade,
 .fifth-main-text:hover + .fifth-main-text-shade,
-.text-img-sixth:hover + .text-img-sixth-shade{
+.text-img-sixth:hover + .text-img-sixth-shade,
+.sixth-main-text:hover + .sixth-main-text-shade,
+.seventh-main-text:hover + .seventh-main-text-shade,
+.eighth-main-text:hover + .eighth-main-text-shade,
+.tenth-main-text:hover + .tenth-main-text-shade,
+.text-img-seventh:hover + .text-img-seventh-shade,
+.text-img-eighth:hover + .text-img-eighth-shade{
 	background: #141421;
 }
 
@@ -423,7 +429,7 @@ body{
 	left: 2%;
 	top: 350%;
 	background: #191929;
-	border-radius: 62px;
+	border-radius: 25px;
 	z-index: -1;
 }
 
@@ -431,10 +437,193 @@ body{
 
 
 
+.sixth-main-text{
+	position: absolute;
+	width: 88%;
+	left: 3%;
+	top: 430%;
+	padding: 1% 3%;
+	background: #424668;
+	border-radius: 25px;
+}
+.sixth-four-p{
+	color: #dedcdc;
+	font-family: 'Roboto Mono', Arial, sans-serif;
+	font-size: calc(1.5vw);
+	line-height: 150%;
+	letter-spacing: -0.02em;
+}
+.sixth-h{
+	font-size: calc(1.8vw);
+	font-weight: 700;
+}
+.bigger-font{
+	font-size: calc(1.6vw);
 
+}
+.sixth-main-text ul{
+	color: #dedcdc;
+	font-family: 'Roboto Mono', Arial, sans-serif;
+	font-size: calc(1.5vw);
+	line-height: 150%;
+	letter-spacing: -0.02em;
+	list-style: none;
+    
+}
+.sixth-main-text ul li{
+	margin-left: 0.5%;
+	padding-left: 2%;
+	background: url(../img/arrow.svg) no-repeat -1% 90%;
+    background-size: 3%;
+}
+.sixth-main-text-shade{
+	position: absolute;
+	width: 88%;
+	height: 69%;
+	left: 1%;
+	top: 426%;
+	padding: 1% 3%;
+	z-index: -1;
+	color: #191929;
+	background: #191929;
+	border-radius: 25px;
+}
 
-
-
+.seventh-main-text{
+	position: absolute;
+	width: 88%;
+	left: 3%;
+	top: 513%;
+	padding: 0 3%;
+	background: #424668;
+	border-radius: 25px;
+}
+.seventh-four-p{
+	color: #dedcdc;
+	font-family: 'Roboto Mono', Arial, sans-serif;
+	font-size: calc(1.5vw);
+	line-height: 150%;
+	letter-spacing: -0.02em;
+}
+.seventh-main-text-shade{
+	position: absolute;
+	width: 88%;
+	left: 1%;
+	top: 508%;
+	padding:  7.1% 3%;
+	z-index: -1;
+	color: #191929;
+	background: #191929;
+	border-radius: 25px;
+}
+.eighth-main-text{
+	position: absolute;
+	width: 88%;
+	left: 3%;
+	top: 553%;
+	padding: 0 3%;
+	background: #424668;
+	border-radius: 25px;
+}
+.eighth-four-p{
+	color: #dedcdc;
+	font-family: 'Roboto Mono', Arial, sans-serif;
+	font-size: calc(1.5vw);
+	line-height: 150%;
+	letter-spacing: -0.02em;
+}
+.eighth-main-text-shade{
+	position: absolute;
+	width: 88%;
+	left: 1%;
+	top: 548%;
+	padding:  7.1% 3%;
+	z-index: -1;
+	color: #191929;
+	background: #191929;
+	border-radius: 25px;
+}
+.text-img-seventh{
+	position: absolute;
+	width: 94%;
+	left: 3%;
+	top: 595%;
+	border-radius: 65px;
+	z-index: 1;
+} 
+.text-img-seventh-shade{
+	position: absolute;
+	width: 94%;
+	left: 1%;
+	top: 587%;
+	padding: 20.8% 0;
+	background: #191929;
+	border-radius: 65px;
+	z-index: -1;
+}
+.ninth-main-text{
+	position: absolute;
+	width: 50%;
+	left: 23%;
+	top: 690%;
+	text-align: center;
+	padding: 0 2%;
+	background: #424668;
+	border-radius: 25px;
+}
+.ninth-four-p{
+	color: #dedcdc;
+	font-family: 'Roboto Mono', Arial, sans-serif;
+	font-size: calc(2.3vw);
+	line-height: 150%;
+	letter-spacing: -0.02em;
+	font-weight: 700;
+}
+.text-img-eighth{
+	position: absolute;
+	width: 94%;
+	left: 3%;
+	top: 719%;
+	border-radius: 65px;
+	z-index: 1;
+} 
+.text-img-eighth-shade{
+	position: absolute;
+	width: 94%;
+	left: 1%;
+	top: 711%;
+	padding: 20.8% 0;
+	background: #191929;
+	border-radius: 65px;
+	z-index: -1;
+}
+.tenth-main-text{
+	position: absolute;
+	width: 89%;
+	left: 2.5%;
+	top: 810%;
+	padding: 0 3%;
+	background: #424668;
+	border-radius: 25px;
+}
+.tenth-four-p{
+	color: #dedcdc;
+	font-family: 'Roboto Mono', Arial, sans-serif;
+	font-size: calc(1.5vw);
+	line-height: 150%;
+	letter-spacing: -0.02em;
+}
+.tenth-main-text-shade{
+	position: absolute;
+	width: 90%;
+	left: 1%;
+	top: 805%;
+	padding:  25% 3%;
+	z-index: -1;
+	color: #191929;
+	background: #191929;
+	border-radius: 25px;
+}
 
 
 
