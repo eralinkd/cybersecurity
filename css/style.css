@@ -1028,43 +1028,38 @@ footer.light{
 	.text-img-seventh{
 		top: 175%;
 		border-radius: 9px;
+		height: 17.3%;
 	} 
-	.text-img-seventh-shade{
-		top: 173%;
-		border-radius: 9px;
-	}
 	.ninth-main-text{
-		top: 199%;
+		top: 195%;
 		min-height: 4.7vh;
 		border-radius: 9px;
 	}
 	.text-img-eighth{
-		top: 207%;
-		border-radius: 9px
-	} 
-	.text-img-eighth-shade{
-		top: 206%;
+		top: 202%;
 		border-radius: 9px;
-	}
+		height: 17.3%;
+	} 
 	.tenth-main-text{
-		top: 232%;
+		top: 222%;
 		border-radius: 9px;
 		min-height: 28vh;
 	}
 	.tenth-main-text-shade{
-		top: 231%;
+		top: 221%;
 		border-radius: 9px;
 	}
 	.imgs-container{
-		top:  264%;
+		top:  254%;
 		border-radius: 9px;
+		height: 39.5%;
 	}
 	footer{
-		top:  310%;
+		top:  303%;
 		border-radius: 9px;
 	}
 	.bottom{
-		top:  317%;
+		top:  310%;
 	}
 	
 }
