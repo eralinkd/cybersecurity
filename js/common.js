@@ -30,7 +30,7 @@ darkThemeButton.style.backgroundColor = "#9e541b";
 lightThemeButton.onclick = function(){
 	headerLogo.classList.add('light');
 	headerMenu.classList.add('light')
-	body.style.backgroundColor = "#ffffff";
+	body.style.backgroundColor = "#E5E5E5";
 
 	for (let shade of shades){
 		shade.classList.add('light')
