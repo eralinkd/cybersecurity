@@ -703,6 +703,9 @@ footer p{
 footer p:first-child{
 	margin-top: 6%;
 }
+footer p a{
+	display: inline;
+}
 .bottom{
 	position: absolute;
 	width: 78%;
@@ -729,7 +732,7 @@ footer p:first-child{
 	background: #DADADA;
 }
 .header-menu.light div{
-	color: #ffffff;
+	color: #E2E2E2;
 }
 .header-menu:hover + .header-menu-shade.light,
 .first-main-text:hover + .first-main-text-shade.light,
@@ -779,7 +782,7 @@ footer p:first-child{
 	color: #191929;
 }
 .orange.light{
-	color: #FDFDFD;
+	color: #E2E2E2;
 }
 .ninth-main-text.light{
 	background: #DADADA;
@@ -790,6 +793,9 @@ footer p:first-child{
 }
 footer.light{
 	background: #7C7C7C;
+}
+footer.light p:nth-child(1){
+	color: #E2E2E2;
 }
 .logo-footer.light{
 	background: url("../img/logo header light.svg") no-repeat 50% 50%;
@@ -1060,6 +1066,5 @@ footer.light{
 	}
 	.bottom{
 		top:  310%;
-	}
-	
+	}	
 }
